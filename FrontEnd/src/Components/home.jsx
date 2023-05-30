@@ -15,6 +15,8 @@ import '../css/home.css'
             <h5 > I am a <span style={{color:"#1df"}}>FULL STACK DEVELOPER</span></h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, fuga, rerum, vitae assumenda dignissimos nostrum sit fugiat facere accusamus 
                   perferendis ratione error quibusdam officiis dolorem sed. Nam recusandae quidem delectus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse necessitatibus iure assumenda ipsum. Aliquam eum nulla sapiente nobis tenetur quis suscipit, ratione repellendus veritatis
+                   impedit consequatur amet molestias ad officia.</p>
                   <div id='social_media'>
                         <a> <i class='bx bxl-facebook bx-tada' ></i></a>
                         <a><i class='bx bxl-instagram-alt bx-tada' ></i></a>
