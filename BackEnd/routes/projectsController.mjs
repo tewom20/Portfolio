@@ -7,7 +7,7 @@
 import projectControllers from "../controllers/projectControllers.mjs";
 //instantiatete the routes
 
- const { getAllProjects, getProjectsByID,addProject, deleteProjectByID } = projectControllers
+ const { getAllProjects, getProjectsByID,addProject, deleteProjectByID,updateProjectByID } = projectControllers
 const Router = Express.Router();
 
 // get  all Projects
@@ -24,16 +24,14 @@ Router.delete("/:id", deleteProjectByID)
 
 // Update product by ID
 
-Router.put("/:id", (req, res)=>{
+Router.patch("/:id", (req, res)=>{
     const id = req.params.id
     // const  data = get object from DB with id this ID
     // if(data)
     res.send(id)
 })
 
-Router.patch("/:id", (req, res)=>{
-    res.send(req.body)
-})
+Router.put("/:id", updateProjectByID)
 
 
 

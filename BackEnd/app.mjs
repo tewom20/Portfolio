@@ -6,8 +6,10 @@ import* as dotenv from 'dotenv'
 
 // custome imports
 import projectRouter from "./routes/projectsController.mjs";
+import userRouter from "./routes/userRouter.mjs"
+import postRouter from './routes/postRouter.mjs'
 import conn from "./config/Database.mjs";
-import ProjectModel from "./Models/projectModel.mjs";
+
 
 
 // using the environment variables
@@ -20,28 +22,15 @@ const app = Express()
 const connectionString = process.env.DB_LOCAL
 conn(connectionString)
 
-// add dummy data
-
-const adddata = async ()=>{
-    const data = {
-        title: "Data mining" ,// String is shorthand for {type: String}
-        author: "TEWOM",
-        body: "this is a perfect beginning t the desired outcome",
-    }
-
-    const result = await new ProjectModel(data).save()
-                                         
-    console.log(result)
-    
-
-}
-adddata()
 
 // middlewares
 app.use(cors())
 app.use(bodyparser.json())
-app.use("/api/projects",projectRouter)
 
+//add routes
+app.use("/api/projects",projectRouter)
+app.use("/api/users",userRouter)
+app.use("/api/posts",postRouter)
 
 const PORT =   process.env.PORT 
 

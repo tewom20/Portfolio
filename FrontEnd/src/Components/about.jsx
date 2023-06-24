@@ -29,12 +29,12 @@ class About extends Component {
              <span style={{color:"#1df"}}>Gmail : tewomf20@gmail.com</span>
             </div>
             <div id="comment" className="container">
-                <form >
+                <form  >
                     <h2>Comment </h2>
-                 <input placeholder="Full name" id="name"/>
-                 <input placeholder="Email" type="email"/>
-                 <textarea placeholder="write a comment"/>
-                 <button type="submit">Submit</button>
+                 <input placeholder="Full name" typeof="text" id="name" />
+                 <input placeholder="Email" typeof="email"/>
+                 <textarea  typeof= "text"placeholder="write a comment"/>
+                 <button typeof="submit">Submit</button>
                 </form>
             </div>
             </>
